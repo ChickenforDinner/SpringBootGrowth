@@ -9,7 +9,8 @@
     <META name="keywords" content="绿色新闻网">
     <meta name="description" content="绿色新闻网">
     <title>绿色新闻网</title>
-    <link rel="stylesheet" th:href="@{css/homeNews.css}">
+    <link rel="stylesheet" th:href="@{css/news.css}">
+    <link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -49,30 +50,9 @@
     </script>
     <div style="width: 1100px;height:129px;background:url(http://news.bjfu.edu.cn/new_images/header.jpg);margin:0 auto;border: none ">
         <div style="width: 885px;height: 82px;padding-left: 10px;padding-top: 25px;float: left">
-            <a href="http://news.bjfu.edu.cn"><img src="http://news.bjfu.edu.cn/new_images/logo.png" alt="绿色新闻网"
-                                                   width="275" height="82"></a>
+            <a href="http://news.bjfu.edu.cn"><img th:src="@{imgs/logo.png}" alt="新闻网" width="150" height="50"></a>
         </div>
-        <div style="width: 94px;height: 46px;float: left;padding-top: 10px;">
-            <img id="img001" src="http://news.bjfu.edu.cn/new_images/weibo.png"
-                 onmouseover="mouseOverPic1('http://news.bjfu.edu.cn/new_images/wenboma.png'); bigPic1.style.visibility='visible';bigPic1.style.zIndex=100;bigPic1.style.position='absolute';"
-                 onmouseout="mouseOutPic1()">
-            <div id="bigPic1" style="visibility:hidden;">
-            </div>
-        </div>
-        <div style="width: 83px;height: 44px;float: left;padding-top: 10px;">
-            <img id="img000" src="http://news.bjfu.edu.cn/new_images/weixin.png"
-                 onmouseover="mouseOverPic('http://news.bjfu.edu.cn/new_images/weixinma.jpg'); bigPic.style.visibility='visible';bigPic.style.zIndex=100;bigPic.style.position='absolute';"
-                 onmouseout="mouseOutPic()">
-            <div id="bigPic" style="visibility:hidden;">
-            </div>
-        </div>
-        <div style="width: 112px;height: 35px;float: left;padding-top: 22px;">
-            <a href="mailto:bjfunews@163.com"><img src="http://news.bjfu.edu.cn/new_images/sy_email.png"> </a>
-        </div>
-        <div style="width: 65px;height: 37px;float: left;padding-top: 19px;">
-            <a href="http://cms.bjfu.edu.cn/cms/search/searchResults.jsp?query=%20&siteID=42&submit=1"><img
-                    src="http://news.bjfu.edu.cn/new_images/search.png"> </a>
-        </div>
+
     </div>
 </div>
 <div class="wrap_box">
@@ -118,7 +98,7 @@
             </div>
             <div style="float:left;margin-top: 12px;margin-left: 8px">
                 <a style="color: #178055;font-size: 15px;font-weight: bold;font-family: 'Microsoft YaHei';"
-                   href="mailto:bjfunews@163.com">来稿信箱：bjfunews@163.com </a>
+                   href="mailto:bjfunews@163.com">来稿信箱：xxxxx@163.com </a>
             </div>
             <div class="searchcon1">
                 <form action="http://cms.bjfu.edu.cn/cms/search/searchResults.jsp" method="post" target="_blank"
@@ -137,69 +117,79 @@
                     <a href="../index.html">新闻首页</a>>> <span>绿色要闻</span>
                 </div>
             </div>
-            <div class="article">
-                <!-- JiaThis Button BEGIN -->
-                <div class="jiathis_style_24x24" style="float: right;">
-                    <a class="jiathis_button_qzone"></a>
-                    <a class="jiathis_button_tsina"></a>
-                    <a class="jiathis_button_tqq"></a>
-                    <a class="jiathis_button_weixin"></a>
-                    <a class="jiathis_button_renren"></a>
-                    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis"
-                       target="_blank"></a>
-                    <a class="jiathis_counter_style"></a>
-                </div>
-                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-                <!-- JiaThis Button END -->
-                <h2 align="center" style="margin-bottom: 20px;margin-top: 50px;">校党委书记王洪元同辅导员座谈交流</h2>
-                <div class="articleAuthor"
-                     style="width:800px;height:15px;margin:0 auto;text-align:center;font-size:13px">
-
-                    <div style="width:800px;height:15px;margin:0 auto;text-align:center;"><span>来源：学生处</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>发表时间：2021/01/08</span>&nbsp;&nbsp;&nbsp;&nbsp;浏览次数：
-                        <script src="/cms/web/count.jsp?articleID=361886"></script>
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 align="center" style="margin-bottom: 20px;margin-top: 50px;">校党委书记王洪元同辅导员座谈交流</h2>
+                    <div class="articleAuthor" style="height:15px;margin:0 auto;text-align:center;font-size:13px">
+                        <div style="height:15px;margin:0 auto;text-align:center;"><span>来源：学生处</span>
+                            <span>发表时间：2021/01/08</span>
+                            <br>
+                        </div>
                         <br>
-                        <!---请插入记录点击数脚本--></div>
-                    <br>
+                    </div>
 
+                    <div class="article_con text-justify">
+                        <p>
+                            1月6日，校党委书记王洪元主持召开辅导员座谈会，听取辅导员代表对校领导班子民主生活会和“十四五”规划编制工作的意见建议，并和辅导员座谈交流。校党委副书记孙信丽出席会议。学工部、研工部负责人、辅导员代表参加座谈会。</p>
+                        <p>
+                            王洪元对辅导员工作给予了肯定，指出辅导员队伍富有朝气活力，在落实立德树人根本任务中具有独特功能，发挥着不可替代作用。校党委高度重视辅导员工作，将加大工作支持保障力度，推动辅导员工作高质量发展。</p>
+                        <p>
+                            王洪元对进一步加强辅导员队伍建设提出八个方面要求：一要把握性质任务，增强责任感和使命感。要提高对辅导员工作重要性的认识，把辅导员工作当成事业去做。二要聚焦立德树人，提高针对性和有效性。要认真学习贯彻《深化新时代教育评价改革总体方案》，按照教育评价改革主题主线，提升立德树人工作成效。三要改进工作方法，抓两头带中间。要因人而异、一人一策做好学生培养工作，守牢学生安全稳定工作底线，努力培养堪当民族复兴大任的时代新人。四要研究影响因子，发挥集体作用。要深入探究影响学生成长发展的要素因子，贯通多方资源力量深化协同育人。五要加强学习实践，提高综合素质。要将加强理论学习和注重实践锻炼相结合，提高理论素养和综合能力。六要掌握思想动态，防风险除隐患。要精准把握学生整体和个体的特点，全面了解学生基本情况和思想动态，做好风险防患。七要精准处置问题，区分显性隐性。对于显性问题，要集中力量、攻坚克难，及时快速处理；对于隐性问题，要注重日常、久久为功，防患于未然。八要净化思想灵魂，涵养仁爱之心。要按照“四有”好老师要求，加强师德师风建设，严格要求自己，用责任心爱心做好育人工作。</p>
+                        <p>
+                            座谈会上，辅导员代表围绕推进思想政治教育工作高质量发展，构建“大学工”工作格局，深化“三全育人”机制体制建设，加强辅导员队伍专业化职业化发展，深化育人评价改革等方面提出了有关意见建议。</p>
+                    </div>
+                    <div class="text-center">
+                        <div style="height: 20px;"></div>
 
-                </div>
+                        <span>作者：xx；审稿：xx、xx</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>编辑：xxx；</span>
+                        <span>审核：xxx </span>
 
-                <div style="clear:both;"></div>
-                <div class="article_con">
-                    <p>
-                        　　1月6日，校党委书记王洪元主持召开辅导员座谈会，听取辅导员代表对校领导班子民主生活会和“十四五”规划编制工作的意见建议，并和辅导员座谈交流。校党委副书记孙信丽出席会议。学工部、研工部负责人、辅导员代表参加座谈会。</p>
-
-                    <p>&nbsp;</p>
-
-                    <p>&nbsp;</p>
-
-                    <p>
-                        　　王洪元对辅导员工作给予了肯定，指出辅导员队伍富有朝气活力，在落实立德树人根本任务中具有独特功能，发挥着不可替代作用。校党委高度重视辅导员工作，将加大工作支持保障力度，推动辅导员工作高质量发展。</p>
-
-                    <p>&nbsp;</p>
-
-                    <p>
-                        　　王洪元对进一步加强辅导员队伍建设提出八个方面要求：一要把握性质任务，增强责任感和使命感。要提高对辅导员工作重要性的认识，把辅导员工作当成事业去做。二要聚焦立德树人，提高针对性和有效性。要认真学习贯彻《深化新时代教育评价改革总体方案》，按照教育评价改革主题主线，提升立德树人工作成效。三要改进工作方法，抓两头带中间。要因人而异、一人一策做好学生培养工作，守牢学生安全稳定工作底线，努力培养堪当民族复兴大任的时代新人。四要研究影响因子，发挥集体作用。要深入探究影响学生成长发展的要素因子，贯通多方资源力量深化协同育人。五要加强学习实践，提高综合素质。要将加强理论学习和注重实践锻炼相结合，提高理论素养和综合能力。六要掌握思想动态，防风险除隐患。要精准把握学生整体和个体的特点，全面了解学生基本情况和思想动态，做好风险防患。七要精准处置问题，区分显性隐性。对于显性问题，要集中力量、攻坚克难，及时快速处理；对于隐性问题，要注重日常、久久为功，防患于未然。八要净化思想灵魂，涵养仁爱之心。要按照“四有”好老师要求，加强师德师风建设，严格要求自己，用责任心爱心做好育人工作。</p>
-
-                    <p>&nbsp;</p>
-
-                    <p>
-                        　　座谈会上，辅导员代表围绕推进思想政治教育工作高质量发展，构建“大学工”工作格局，深化“三全育人”机制体制建设，加强辅导员队伍专业化职业化发展，深化育人评价改革等方面提出了有关意见建议。</p>
+                        <div style="clear:both;"></div>
+                        <div style="height: 20px;"></div>
+                    </div>
 
                 </div>
-                <div style="height: 20px;"></div>
-                <!-- 		<div style="width:800px;height:15px;margin:0 auto;text-align:center;"><span>来源：学生处</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>作者：薛晶；审稿：王艳洁、肖进</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浏览次数：<script src="/cms/web/count.jsp?articleID=361886"></script>&nbsp;&nbsp;&nbsp;
-                 -->        <!---请插入记录点击数脚本-->
-                <!-- 					</div>
+                <div class="col-lg-4 left_box1" style="margin-top: 5px;"><!--一周排行-->
+                    <h2 class="pubtit1"><a href="../yzph/index.html">&nbsp&nbsp&nbsp为你推荐</a></h2>
+                    <ul class="news_ul" style="height: 420px;">
 
-                 -->
-                <span>作者：薛晶；审稿：王艳洁、肖进</span>
-
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>编辑：高大为；</span>
-                <span>审核：刘广超 </span>
-
-                <div style="clear:both;"></div>
-                <div style="height: 20px;"></div>
+                        <li>
+                            <a th:href="@{/news}" title="校党委书记王洪元同辅导员座谈交流" class="margin_l" target="_blank">
+                                校党委书记王洪元同辅导员座谈交流
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../lsyw/361919.html" title="学校召开本科教学督导工作总结会" class="margin_l" target="_blank">
+                                学校召开本科教学督导工作总结会
+                            </a></li>
+                        <li>
+                            <a href="../lsyw/362020.html" title="教育部网站报道我校发挥“五老”优势践行育人使命做法" class="margin_l"
+                               target="_blank"> 教育部网站报道我校发挥“五老”优势践行育
+                            </a></li>
+                        <li>
+                            <a href="../lsyw/362041.html" title="我校举办2021年辅导员工作专题培训" class="margin_l" target="_blank">
+                                我校举办2021年辅导员工作专题培训
+                            </a></li>
+                        <li>
+                            <a href="../lsxy/361916.html" title="林学院召开2021年首次授课教师试讲考核评审会" class="margin_l"
+                               target="_blank">
+                                林学院召开2021年首次授课教师试讲考核
+                            </a></li>
+                        <li>
+                            <a href="../lsxy/362025.html" title="我校获得“2020全国学校物业管理机构50强”称号" class="margin_l"
+                               target="_blank"> 我校获得“2020全国学校物业管理机构5
+                            </a></li>
+                        <li>
+                            <a href="../lsxy/361914.html" title="生物学院党委理论中心组专题学习十九届五中全会" class="margin_l"
+                               target="_blank">
+                                生物学院党委理论中心组专题学习十九届五中
+                            </a></li>
+                        <li>
+                            <a href="../lsxy/361915.html" title="经管学院开展“回望百年足迹，365天学党史”线上教育" class="margin_l"
+                               target="_blank"> 经管学院开展“回望百年足迹，365天学党
+                            </a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -208,7 +198,7 @@
         <div class="footer1" style="padding-top: 10px;"><a href="../gywm/index.html">关于我们</a> | <a href="?">新闻投稿</a> |
             <a href="http://cms.bjfu.edu.cn/cms/index.jsp">管理员登陆</a></div>
         <div class="copyright" style="height: 70px;">
-            <p style="padding-top: 0px;">Copyright &#169; 2005- 2018 北京林业大学新闻办公室 地址：北京市海淀区清华东路35号 邮政编码:100083<br>总编：刘广超&nbsp&nbsp&nbsp副总编：黄鑫&nbsp朱天磊&nbsp杨金融&nbsp&nbsp编辑：高大为&nbsp李佳&nbsp邢海涛&nbsp王燕俊&nbsp张薇&nbsp张嘉月&nbsp赵弘一&nbsp杨一楠&nbsp&nbsp&nbsp<a
+            <p style="padding-top: 0px;">Copyright &#169; 2021 xxxxxxx 地址：xxxxxxx 邮政编码:100000<br>总编：xxx&nbsp&nbsp&nbsp副总编：xx&nbspxxx&nbspxxx&nbsp&nbsp编辑：xxx&nbspxxx&nbspxxx&nbspxx&nbspxxx&nbspxx一&nbspxxx&nbsp&nbsp&nbsp<a
                     style="color: #fff;" href="http://cms.bjfu.edu.cn/cms/index.jsp">管理员登陆</a></p>
         </div>
     </div>

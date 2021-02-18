@@ -134,6 +134,23 @@ img {
     color: #c60000;
 }
 
+ul li {
+    margin-top: 1rem;
+}
+
+.recommendation {
+    border: 2px dashed darkgreen;
+    margin-top: 200px;
+    margin-right: 15px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.recommendation > a {
+
+    background: url(http://news.bjfu.edu.cn/new_images/pubtitbg1.png) no-repeat;
+}
+
 .left_box {
     width: 726px;
     height: 423px;
@@ -207,6 +224,7 @@ img {
     line-height: 27px;
     margin-top: 30px;
     font-size: 16px;
+    margin-left: 20px;
 }
 
 .more {
